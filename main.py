@@ -2,10 +2,9 @@ import pandas as pd
 import numpy as np
 
 # load the data
-# movies = pd.read_csv("C:/Users/rafal/Desktop/moviedata/movies.csv")
-# ratings = pd.read_csv("C:/Users/rafal/Desktop/moviedata/ratings.csv")
-movies = pd.read_csv("/Users/rafal/Documents/movie_dataset/movies.csv")
-ratings = pd.read_csv("/Users/rafal/Documents/movie_dataset/ratings.csv")
+
+movies = pd.read_csv("/movie_dataset/movies.csv")
+ratings = pd.read_csv("/movie_dataset/ratings.csv")
 
 # minimum number of ratings to consider a movie
 minimum_film_ratings = 10
@@ -76,7 +75,7 @@ def name_to_id(movie_name):
         return movie_id
 
 
-name_of_movie = 'Green Mile'
+name_of_movie = 'Battlefield Earth'
 
 # getting id based on name of movie
 movieid = name_to_id(name_of_movie)
